@@ -1,3 +1,12 @@
+:root {
+  --clr-primary: #F16232;
+  --clr-white: #FFF;
+  --bg-clr-primary: #F8F8F8;
+}
+@font-face {
+  font-family: "Brittany";
+  src: url('Font/BrittanySignature-MaZx.woff');
+}
 * {
   box-sizing: border-box;
   padding: 0;
@@ -12,16 +21,72 @@ body {
 a {
   text-decoration: none;
 }
-.bg-color-secondary {
-  background-color: #F16232;
+
+img {
+  max-width: 100%;
 }
 .container {
-  max-width: 1300px;
-  margin: 0 auto;
+  --max-width: 1300px;
+  --padding: 1rem;
+  max-width: min(var(--max-width), 100% - (var(--padding) * 2));
+  margin-inline: auto;
 }
 .flex {
   display: flex;
 }
+.justify-sb {
+  justify-content: space-between;
+}
+.align-c {
+  align-items: center;
+}
+.height-full {
+  height: 100%;
+}
+.bs-primary {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.bg-clr-primary {
+  background-color: var(--bg-clr-primary);
+}
+.pointer {
+  cursor: pointer;
+}
+.logo  {
+  font-family: "Brittany";
+  font-size: 1.75rem;
+  cursor: pointer;
+}
+.primary-header {
+  height: 5rem;
+  position: fixed;
+  left: 0;
+  right: 0;
+  /* border: 1px solid black; */
+}
+.btn-primary {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  border: 0;
+  color: var(--clr-white);
+  background-color: var(--clr-primary);
+  font-size: 1rem;
+  padding: .5rem 1rem;
+  border-radius: .5rem;
+  cursor: pointer;
+  line-height: 20px;
+}
+.btn-primary-icon {
+  width: 30px;
+  height: 30px;
+  fill: #FFF;
+}
+
+.bg-color-secondary {
+  background-color: #F16232;
+}
+
 .pt-4 {
   padding-top: 2rem;
 }
