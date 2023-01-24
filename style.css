@@ -37,7 +37,6 @@ body {
   width: 100%;
   min-height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
-  /* padding-top: 5rem; */
   color: #000; 
 }
 a {
@@ -300,17 +299,17 @@ h1,h2,h3,h4 {
 .hero__des a {
   color: var(--clr-primary);
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .hero__title {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
   .hero__des {
     font-size: 1rem;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 500px) {
   .hero__title {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .hero__des {
     font-size: 1rem;
