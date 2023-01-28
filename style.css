@@ -313,88 +313,61 @@ h1,h2,h3,h4 {
   }
 }
 
-.about-us__content {
-  padding-block: 3rem;
+.about {
+  padding: 5rem 0;
 }
-.heading-secondary {
-  font-size: 2rem;
-}
-.about-us__title {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.about-us__grid {
+.about__grid {
   display: grid;
-  gap: 1.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
 }
-
 .about-card {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  gap: 2.5rem;
+  padding: 2rem 1.75rem;
+  border-radius: 0.5rem;
+  background-color: var(--clr-white);
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.about-card__user-info {
+  display: flex;
   justify-content: flex-start;
-  /* display: grid;
-  justify-items: center; */
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  background-color: #FFF;
-  border-radius: 1rem;
-  padding: 1rem;
+  align-items: center;
+  gap: 1rem;
 }
-
-
-.about-card__img-box {
-  width: 150px;
-  height: 150px;
-  border-radius: 75px;
-  overflow: hidden;
-  border: 3px solid var(--clr-primary);
-  margin-bottom: .5rem;
-}
-
-.about-card__img {
-  width: 100%;
-  height: 100%;
+.about-card__user-img {
+  width: 64px;
+  height: 64px;
+  border-radius: 32px;
   object-fit: cover;
+  object-position: center;
 }
-
+.about-card__user-data {
+  
+}
 .about-card__user-name {
   font-size: 1.25rem;
-  font-weight: 600;
 }
-
 .about-card__user-title {
   color: grey;
-}
-
-.about-card__user-des {
-  font-size: 14px;
-  margin-block: 0.75rem;
+  font-size: 1rem;
+  
 }
 
 .about-card__links-menu {
   display: flex;
-  gap: .75rem;
-  margin-top: auto;
-}
-
-.about-card__link {
-  
+  gap: .5rem;
 }
 
 .about-card__link-icon {
-  font-size: 1.5rem;
+  width: 25px;
+  height: 25px;
+  fill: #F16232;
 }
-.about-card__empty {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-block: 3rem;
-
-}
-.about-card__empty-icon {
-  font-size: 3rem;
+@media (max-width: 768px) {
+  .about__grid {
+    grid-template-columns: 1fr;
+  }
 }
